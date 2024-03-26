@@ -6,6 +6,30 @@ body {
     margin:0;
 }
 
+@font-face {
+    font-family: "Mioge";
+    src: url("fonts/MiogeFreeTrial-WyBMz.ttf");
+    src: url(fonts/MiogeFreeTrial-WyBMz.ttf) format('truetype');
+    font-weight:100px;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "Rabenk";
+    src: url("fonts/Rabenk-WyBOO.ttf");
+    src: url(fonts/Rabenk-WyBOO.ttf) format('truetype');
+    font-weight:100px;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "ModernSans";
+    src: url("fonts/ModernSans-Light.otf");
+    src: url(fonts/ModernSans-Light.otf) format('opentype');
+    font-weight:100px;
+    font-style:normal;
+}
+
 .main-container {
     display:flex;
     flex-direction:column;
@@ -18,6 +42,8 @@ body {
     align-items:center;
     background-color:red;
     height:15vh;
+    font-family: Rabenk;
+    font-size:100px;
 }
 
 .menuitems {
@@ -27,20 +53,43 @@ body {
     align-items:center;
     background-color:orange;
     height:5vh;
+    font-family: Mioge;
+    font-size:20px;
 }
 
+.piecetitle {
+    margin-left:100px;
+    font-family: Mioge;
+    font-size:50px;
+}
+
+.piecedes {
+    margin-left:100px;
+    font-family: ModernSans;
+}
+
+
+.recentwork {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    white-space:nowrap;
+    height:3vh;
+}
 
 .item-container {
     display:flex;
     flex-direction:column;
     background-color:yellow;
-    height:70vh;
+    justify-content:space-evenly;
+    gap:100px;
 }
 
 .content {
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
+    gap:50px;
 }
 
 .left1 {
@@ -49,9 +98,22 @@ body {
     justify-content:space-evenly;
 }
 
+.right1 {
+    margin-right:100px;
+    display:flex;
+    gap:20px;
+}
+
 .label {
     text-align:center;
     margin-bottom:30px;
+    font-family: Mioge;
+    font-size:20px;
+    color:gray;
+}
+
+.focus {
+    color:black;
 }
 
 
